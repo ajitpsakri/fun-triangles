@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn triangles</title>
+    <!-- add link to css file -->
+    <!-- add link to javascript file -->
+</head>
+
+<body>
+    <button id="btn-triangle-really">🛠️Check if angles make a triangle</button>
+    <button id="btn-find-hypotenus">🛠️Find hypotenuse</button>
+    <button id="btn-find-area">🛠️Find Area of triangle</button>
+    <button id="quiz">🇶uiz</button>
+    <hr>
+    <div class="triangle-check">
+        <label for="angle-one">Enter angle one</label>
+        <input id="angle-one" type="number">
+        <label for="angle-two">Enter angle two</label>
+        <input id="angle-two" type="number">
+        <label for="angle-three">Enter angle three</label>
+        <input id="angle-three" type="number">
+        <button id="btn-submit-angles">Submit</button>
+    </div>
+    <hr>
+    <div class="quiz">
+        <div class="triangle-type-angle">
+            <p id="question1">Which type of triangle is this? if angles in degree are:</p>
+            <label for="acute">Acute</label>
+            <input id="acute" type="radio" value="acute" name="triangle-type-angle">
+            <label for="obtuse">Obtuse</label>
+            <input id="obtuse" type="radio" value="obtuse" name="triangle-type-angle">
+            <label for="right">Right</label>
+            <input id="right" type="radio" value="right" name="triangle-type-angle">
+        </div>
+        <div class="triangle-type-side">
+            <p id="queston3">Which type of triangle is this? if its sides are: </p>
+            <label for="Equilateral Triangle">Equilateral Triangle</label>
+            <input id="Equilateral Triangle" type="radio" value="Equilateral Triangle" name="triangle-type-side">
+            <label for="Isosceles Triangle">Isosceles Triangle</label>
+            <input id="Isosceles Triangle" type="radio" value="Isosceles Triangle" name="triangle-type-side">
+            <label for="Scalene Triangle">Scalene Triangle</label>
+            <input id="Scalene Triangle" type="radio" value="Scalene Triangle" name="triangle-type-side">
+        </div>
+        <div class="what-is-third-angle">
+            <p id="question2">What is angle 3? if angle one and two are:</p>
+            <label for="enter-third-angle">Enter third Angle: </label>
+            <input id="enter-third-angle" type="number">
+        </div>
+        <button id="btn-submit-quiz">Submit</button>
+    </div>
+    <hr>
+    <div class="give-me-hypotenuse">
+        <label for="perpendicular">Enter perpendicular: </label>
+        <input id="perpendicular" type="number">
+        <label for="base">Enter base: </label>
+        <input id="base" type="number">
+        <button id="btn-submit-PandB">Submit to get hypotenuse</button>
+    </div>
+    <hr>
+    <div class="find-area">
+        <button id="half-base-height">Given base and height</button>
+        <button id="with-hypotenuse">Given hypotenuse and perpendicular</button>
+        <button id="all-sides">Given length of all sides</button>
+        <button id="equilateral-triangle">Equilateral triangle</button>
+        <button id="with-angle">Given an angle and two sides</button><br>
+        <div class="base-height">
+            <!-- 1/2*b*h -->
+            <label for="base-for-area">Enter Base: </label>
+            <input id="base-for-area" type="number">
+            <label for="height-for-area">Enter Height: </label>
+            <input id="height-for-area" type="number">
+            <button id="submit-area1">Submit to find Area</button>
+        </div>
+        <hr>
+        <div class="hypo-perpendi">
+            <!-- given hypotenuse and perpendicular -->
+            <label for="hypotenuse-for-area">Enter hypotenuse: </label>
+            <input id="hypotenuse-for-area" type="number">
+            <label for="perpendicular-for-area">Enter perpendicular: </label>
+            <input id="perpendicular-for-area" type="number">
+            <button id="submit-area2">Submit to find Area</button>
+        </div>
+        <hr>
+        <div class="all-sides-area">
+            <!-- A = sqrt(s(s-a)(s-b)(s-c)) where s is half of perimeter -->
+            <label for="Side1-for-area">Enter Side1: </label>
+            <input id="Side1-for-area" type="number">
+            <label for="Side2-for-area">Enter Side2: </label>
+            <input id="Side2-for-area" type="number">
+            <label for="Side3-for-area">Enter Side3: </label>
+            <input id="Side3-for-area" type="number">
+            <button id="submit-area3">Submit to find Area</button>
+        </div>
+        <hr>
+        <div class="equivalent-triangle-area">
+            <!-- Equilateral triangle sqrt(3)/4 * (side)^2 -->
+            <label for="side-length-for-area">Enter side-length: </label>
+            <input id="side-length-for-area" type="number">
+            <button id="submit-area4">Submit to find Area</button>
+        </div>
+        <hr>
+        <div class="given-an-angle-toArea">
+            <!-- given A B side and C angle, Area = (ab/2)*sinc -->
+            <label for="Side1-for-area">Enter Side1: </label>
+            <input id="Side1-for-area" type="number">
+            <label for="Side2-for-area">Enter Side2: </label>
+            <input id="Side2-for-area" type="number">
+            <label for="angle3-for-area">Enter angle3: </label>
+            <input id="angle3-for-area" type="number">
+            <button id="submit-area5">Submit to find Area</button>
+        </div>
+    </div>
+    <p id="message"></p>
+    <script src="./index.js"></script>
+</body>
+
+</html>
