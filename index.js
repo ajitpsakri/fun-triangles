@@ -17,15 +17,9 @@ for(let key in buttonObj){
     displayDivBasedOnButtonClicked(key)
 }
 
-// const allDiv = [triangleCheck,quiz,findHypotenus,findArea];
-// const allButton = [triangleCheckButton,quizButton,findHypotenusButton,findAreaButton]
-
-// allButton.map(ele=>displayDivBasedOnButtonClicked(ele))
-
 function displayDivBasedOnButtonClicked(btnName){
     buttonObj[btnName].addEventListener('click',function(){
-        clearDivs()   
-        //convert variable name btnName to string form(Hint use object)
+        clearDivs();   
        display(eval(divObj[btnName.replace(/(\w+)Button/g,"$1")]))
     })    
 }
@@ -37,7 +31,6 @@ const clearDivs = () => {
         clear(divObj[key])
     }
 }
-clearDivs()
-// const showWhatIsClick = () => {}
+clearDivs();
 
 
