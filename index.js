@@ -14,23 +14,26 @@ const divObj = {
 }
 
 for(let key in buttonObj){
-    displayDivBasedOnButtonClicked(key)
+    displayDivBasedOnButtonClicked(key,divObj,buttonObj)
 }
 
-function displayDivBasedOnButtonClicked(btnName){
-    buttonObj[btnName].addEventListener('click',function(){
-        clearDivs();   
-       display(eval(divObj[btnName.replace(/(\w+)Button/g,"$1")]))
+function displayDivBasedOnButtonClicked(btnName,divObject,btnObject){
+    btnObject[btnName].addEventListener('click',function(){
+        // console.log(btnName,typeof(btnName))
+        // console.log(divObject,typeof(divObject))
+        // console.log(btnObject,typeof(btnObject))
+       clearDivs(divObject);   
+       display(eval(divObject[btnName.replace(/(\w+)Button/g,"$1")]))
     })    
 }
 const clear = whatToClear => whatToClear.style.display = "none";
 const display= whatToDisplay => whatToDisplay.style.display = "block";
 
-const clearDivs = () => {
-    for(let key in divObj){
-        clear(divObj[key])
+const clearDivs = (divToClear) => {
+    for(let key in divToClear){
+        clear(divToClear[key])
     }
 }
-clearDivs();
+clearDivs(divObj);
 
 
