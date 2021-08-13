@@ -68,6 +68,38 @@ btnArea3.addEventListener('click',function(){
     if(area3){
         message.innerText = "Area is "+area3
     }else{
-        message.innerText = "This triangle does not exist"
+        message.innerText = "Enter Valid Input"
+    }
+})
+
+//logic 4
+const lg4Side = document.querySelector("#side-length-for-area");
+const btnArea4 = document.querySelector("#submit-area4");
+
+btnArea4.addEventListener('click',function(){
+    let a = Number(lg4Side.value)
+    let area4 = (Math.sqrt(3)/4)*a*a;
+    if(area4){
+        message.innerText = "Area is "+area4
+    }else{
+        message.innerText = "Enter Valid Input"
+    }
+})
+
+//logic 5
+const lg5SideOne = document.querySelector("#area5Side1-for-area");
+const lg5SideTwo = document.querySelector("#area5Side2-for-area");
+const lg5Angle = document.querySelector("#angle3-for-area")
+const btnArea5 = document.querySelector("#submit-area5");
+console.log(lg5SideOne)
+btnArea5.addEventListener('click',function(){
+    let lg5a = Number(lg5SideOne.value)
+    let lg5b = Number(lg5SideTwo.value)
+    let lg5c = (Math.PI/180)*Number(lg5Angle.value)
+    let area5 = ((lg5a*lg5b)/2)*(Math.sin(lg5c))
+    if(area5){
+        message.innerText = "Area is "+area5
+    }else{
+        message.innerText = "Enter Valid Input"
     }
 })

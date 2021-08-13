@@ -19,9 +19,7 @@ for(let key in buttonObj){
 
 function displayDivBasedOnButtonClicked(btnName,divObject,btnObject){
     btnObject[btnName].addEventListener('click',function(){
-        // console.log(btnName,typeof(btnName))
-        // console.log(divObject,typeof(divObject))
-        // console.log(btnObject,typeof(btnObject))
+       message.innerText = "";
        clearDivs(divObject);   
        display(eval(divObject[btnName.replace(/(\w+)Button/g,"$1")]))
     })    
