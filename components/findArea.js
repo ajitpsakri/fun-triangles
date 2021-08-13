@@ -30,7 +30,6 @@ btnArea1.addEventListener('click',function(){
 })
 
 //logic 2
-
 const lg2Hypotenuse = document.querySelector("#hypotenuse-for-area");
 const lg2Perpendicular = document.querySelector("#perpendicular-for-area");
 const btnArea2 = document.querySelector("#submit-area2");
@@ -50,5 +49,25 @@ btnArea2.addEventListener('click',function(){
         }
     }else{
         message.innerText = "Enter Both Hypotenuse and Perpendicular"
+    }
+})
+
+//logic3
+const sideOne = document.querySelector("#Side1-for-area");
+const sideTwo = document.querySelector("#Side2-for-area");
+const sideThree = document.querySelector("#Side3-for-area");
+const btnArea3 = document.querySelector("#submit-area3");
+
+btnArea3.addEventListener('click',function(){
+    let a = Number(sideOne.value);
+    let b = Number(sideTwo.value);
+    let c = Number(sideThree.value)
+    let perimeter = a + b +c;
+    let s = perimeter/2;
+    let area3 = Math.sqrt(s*(s-a)*(s-b)*(s-c))
+    if(area3){
+        message.innerText = "Area is "+area3
+    }else{
+        message.innerText = "This triangle does not exist"
     }
 })
