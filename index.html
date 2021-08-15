@@ -33,31 +33,78 @@
         <button id="btn-submit-PandB">Submit to get hypotenuse</button>
     </div>
     <div class="quiz">
-        <div class="triangle-type-angle">
-            <p id="question1">Which type of triangle is this? if angles in degree are:</p>
-            <label for="acute">Acute</label>
-            <input id="acute" type="radio" value="acute" name="triangle-type-angle">
-            <label for="obtuse">Obtuse</label>
-            <input id="obtuse" type="radio" value="obtuse" name="triangle-type-angle">
-            <label for="right">Right</label>
-            <input id="right" type="radio" value="right" name="triangle-type-angle">
-        </div>
-        <div class="triangle-type-side">
-            <p id="queston3">Which type of triangle is this? if its sides are: </p>
-            <label for="Equilateral Triangle">Equilateral Triangle</label>
-            <input id="Equilateral Triangle" type="radio" value="Equilateral Triangle" name="triangle-type-side">
-            <label for="Isosceles Triangle">Isosceles Triangle</label>
-            <input id="Isosceles Triangle" type="radio" value="Isosceles Triangle" name="triangle-type-side">
-            <label for="Scalene Triangle">Scalene Triangle</label>
-            <input id="Scalene Triangle" type="radio" value="Scalene Triangle" name="triangle-type-side">
-        </div>
-        <div class="what-is-third-angle">
-            <p id="question2">What is angle 3? if angle one and two are:</p>
-            <label for="enter-third-angle">Enter third Angle: </label>
-            <input id="enter-third-angle" type="number">
-        </div>
+        <form class="quizForm" action="/">
+
+            <ol>
+                <li>
+                    <div class="quiz-questions">
+                        <p id="question1">Which type of triangle is this? if Angle1 is 45&#176, Angle2 is 45&#176,
+                            Angle3 is
+                            90&#176.
+                        </p>
+                        <ol type="a">
+                            <li><label for="acute">Acute</label>
+                                <input id="acute" type="radio" value="acute" name="triangle-type-angle">
+                            </li>
+                            <li>
+                                <label for="obtuse">Obtuse</label>
+                                <input id="obtuse" type="radio" value="obtuse" name="triangle-type-angle">
+                            </li>
+                            <li>
+                                <label for="right">Right</label>
+                                <input id="right" type="radio" value="right" name="triangle-type-angle">
+                            </li>
+                        </ol>
+                    </div>
+                </li>
+                <li>
+                    <div class="quiz-questions">
+                        <p id="queston3">Which type of triangle is this? if side1 is 5cm side2 is 5cm and side3 is 8cm:
+                        </p>
+                        <ol type="a">
+                            <li>
+                                <label for="Equilateral Triangle">Equilateral Triangle</label>
+                                <input id="Equilateral Triangle" type="radio" value="Equilateral Triangle"
+                                    name="triangle-type-side">
+                            </li>
+                            <li>
+                                <label for="Isosceles Triangle">Isosceles Triangle</label>
+                                <input id="Isosceles Triangle" type="radio" value="Isosceles Triangle"
+                                    name="triangle-type-side">
+                            </li>
+                            <li>
+                                <label for="Scalene Triangle">Scalene Triangle</label>
+                                <input id="Scalene Triangle" type="radio" value="Scalene Triangle"
+                                    name="triangle-type-side">
+                            </li>
+                        </ol>
+                    </div>
+                </li>
+                <li>
+                    <div class="quiz-questions">
+                        <p id="question2">What is angle 3? if angle1 is 58&#176 and angle two is 29&#176 </p>
+                        <ol type="a">
+                            <li>
+                                <label for="23">23</label>
+                                <input id="23" type="radio" value="23" name="triangle-angle-identifier">
+                            </li>
+                            <li>
+                                <label for="78">78</label>
+                                <input id="78" type="radio" value="78" name="triangle-angle-identifier">
+                            </li>
+                            <li>
+                                <label for="93">93</label>
+                                <input id="93" type="radio" value="93" name="triangle-angle-identifier">
+                            </li>
+                        </ol>
+                    </div>
+                </li>
+            </ol>
+
+        </form>
         <button id="btn-submit-quiz">Submit</button>
     </div>
+
 
 
     <div class="find-area">

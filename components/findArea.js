@@ -91,7 +91,6 @@ const lg5SideOne = document.querySelector("#area5Side1-for-area");
 const lg5SideTwo = document.querySelector("#area5Side2-for-area");
 const lg5Angle = document.querySelector("#angle3-for-area")
 const btnArea5 = document.querySelector("#submit-area5");
-console.log(lg5SideOne)
 btnArea5.addEventListener('click',function(){
     let lg5a = Number(lg5SideOne.value)
     let lg5b = Number(lg5SideTwo.value)
@@ -102,4 +101,26 @@ btnArea5.addEventListener('click',function(){
     }else{
         message.innerText = "Enter Valid Input"
     }
+})
+
+
+//quiz
+const questions = document.querySelector(".quizForm")
+const btnQuiz = document.querySelector("#btn-submit-quiz");
+const currectAnswers = ["right","Isosceles Triangle","93"]
+
+btnQuiz.addEventListener('click',function(){
+    let formResults = new FormData(questions)
+    let scores = 0;
+    let answers = []
+    for(let events of formResults.entries()){
+        answers.push(events[1])
+    }
+    for(let i=0;i<currectAnswers.length;i++){
+        if(answers[i]===currectAnswers[i]){
+            scores++
+        }
+    }
+    message.innerText = "Your Score is "+scores
+    scores = 0
 })
