@@ -1,4 +1,40 @@
-#pythoMeme{
-    width: 300px;
-    height: 300px;
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+.center{
+text-align: center;
+}
+hr{
+    width: 600px;
+}
+body{
+    width: 650px;
+    margin: auto;
+    background-color: #D1FAE5; 
+    font-family: 'Acme', sans-serif;
+}
+button{
+    margin: 5px;
+    background-color: white;
+    border-radius: 0.3rem;
+        
+    padding: 5px;
+    cursor: pointer;
+}
+/* main-buttons */
+.main-button{
+    box-shadow: 1px 1px 8px;
+    padding: 7px;
+}
+
+/* sub-buttons */
+/* input */
+input[type=Number]{
+    width: 250px;
+    height: 30px;
+    margin: 6px;
+}
+/* label */
+/* message */
+#message{
+    font-size: 20px;
 }

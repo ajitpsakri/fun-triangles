@@ -33,22 +33,19 @@ btnArea1.addEventListener('click',function(){
 const lg2Hypotenuse = document.querySelector("#hypotenuse-for-area");
 const lg2Perpendicular = document.querySelector("#perpendicular-for-area");
 const btnArea2 = document.querySelector("#submit-area2");
-const pythoMeme = document.querySelector("#pythoMeme"); 
-clear(pythoMeme)
 btnArea2.addEventListener('click',function(){
     let lg2Base = Math.sqrt(Math.pow(Number(lg2Hypotenuse.value),2)- Math.pow(Number(lg2Perpendicular.value),2))    
     //if hypotenuse is less then lg2Base become imaginary
-    if(lg2Base !== 0 && lg2Perpendicular.value){
-        if(lg2Hypotenuse.value >= lg2Perpendicular.value){
+    if(Number(lg2Hypotenuse.value) && Number(lg2Perpendicular.value)){
+        if(Number(lg2Hypotenuse.value) > Number(lg2Perpendicular.value)){
             console.log("h is great")
-            message.innerText = "Area is "+0.5*lg2Base*lg2Perpendicular.value
+            message.innerText = "Area is "+0.5*lg2Base*Number(lg2Perpendicular.value)
         }else{
             console.log("h is small")
         message.innerText = "Hypotenuse should be largest side of the Triangle"
-        display(pythoMeme)
         }
     }else{
-        message.innerText = "Enter Both Hypotenuse and Perpendicular"
+        message.innerText = "Enter Valid Input"
     }
 })
 
