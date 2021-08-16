@@ -5,18 +5,21 @@ text-align: center;
 }
 hr{
     width: 600px;
+    margin: 0.7rem;
 }
 body{
-    width: 650px;
-    margin: auto;
     background-color: #D1FAE5; 
     font-family: 'Acme', sans-serif;
+}
+main{
+    width: 650px;
+    margin: auto;
+   
 }
 button{
     margin: 5px;
     background-color: white;
     border-radius: 0.3rem;
-        
     padding: 5px;
     cursor: pointer;
 }
