@@ -1,4 +1,22 @@
 {
+  "name": "fun-triangles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajitpsakri/fun-triangles.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajitpsakri/fun-triangles/issues"
+  },
+  "homepage": "https://github.com/ajitpsakri/fun-triangles#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4"
   }
