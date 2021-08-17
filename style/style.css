@@ -41,3 +41,8 @@ input[type=Number]{
 #message{
     font-size: 20px;
 }
+#btn-submit-quiz{
+    position: relative;
+    left: 20px;
+    padding: 8px;
+}
