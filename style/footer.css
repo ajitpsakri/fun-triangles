@@ -99,8 +99,8 @@ footer .fab ,.fas{
   }
   
 footer{
-    position: absolute;
-    top: 560px;
+    position: fixed;
+    bottom: 0;
     width: 100%;
     font-family: 'Acme', sans-serif;
 }
